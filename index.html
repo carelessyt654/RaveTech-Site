@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RaveTech</title>
-    <link rel="icon" type="image/png" href="RAVE_TECH_ICON.png">
+    <link align="icon" type="image/png" href="RAVE_TECH_ICON.png">
     
     <style>
-       
         body { 
             margin: 0; 
             min-height: 100vh; 
-            background-image: repeating-linear-gradient( 45deg, #4b026f, /* hello*/ #4b026f 20px, #8a2be2 20px, #8a2be2 40px ); 
+            background-image: repeating-linear-gradient( 45deg, #4b026f, #4b026f 20px, #8a2be2 20px, #8a2be2 40px ); 
             background-attachment: fixed; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            color: white;
+            padding-bottom: 50px;
         }
 
         @keyframes fadeIn { 
@@ -25,88 +27,66 @@
             to { opacity: 1; transform: translateY(0); } 
         }
 
-       
         .rave-text { 
             text-align: center; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            font-size: 7rem; 
+            font-size: 6rem; 
             font-weight: bold; 
-            color: white; 
-            -webkit-text-stroke: 23px purple; 
-            text-stroke: 23px purple; 
-            margin-top: 100px; 
-            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.9)); 
+            -webkit-text-stroke: 3px purple; 
+            text-stroke: 3px purple; 
+            margin-top: 60px; 
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8)); 
             paint-order: stroke fill; 
             animation: fadeIn 1.5s ease-out forwards;
         } 
 
-        .about_me { 
+        .about_me, .socials { 
             text-align: center; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            font-size: 2rem; 
-            font-weight: normal; 
-            color: white; 
-            -webkit-text-stroke: 6px purple; 
-            text-stroke: 6px purple; 
+            font-size: 2.5rem; 
+            font-weight: bold; 
+            -webkit-text-stroke: 1.5px purple; 
+            text-stroke: 1.5px purple; 
             margin-top: 50px; 
-            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9)); 
             paint-order: stroke fill; 
             animation: fadeIn 1.5s ease-out forwards;
         } 
 
         .about_metext { 
             text-align: center; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            font-size: 1.2rem; 
-            font-weight: normal; 
-            color: white; 
-            -webkit-text-stroke: 6px blue; 
-            text-stroke: 6px purple; 
-            margin-top: 0px; 
-            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9)); 
-            paint-order: stroke fill; 
-            animation: fadeIn 1.5s ease-out forwards;
-        } 
-
-        .socials { 
-            text-align: center; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            font-size: 2rem; 
-            font-weight: normal; 
-            color: white; 
-            -webkit-text-stroke: 6px purple; 
-            text-stroke: 6px purple; 
-            margin-top: 50px; 
-            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9)); 
-            paint-order: stroke fill; 
+            font-size: 1.25rem; 
+            max-width: 800px;
+            margin: 20px auto 0 auto;
+            line-height: 1.6;
+            padding: 0 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
             animation: fadeIn 1.5s ease-out forwards;
         } 
 
         .idkwhattocallthis { 
             text-align: center; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            font-size: 0.5rem; 
-            font-weight: normal; 
-            color: white; 
-            -webkit-text-stroke: 3px purple; 
-            text-stroke: 6px purple; 
-            margin-top: 0px; 
-            filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9)); 
-            paint-order: stroke fill; 
+            font-size: 1rem; 
+            font-style: italic;
+            margin-top: 5px; 
+            opacity: 0.9;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
             animation: fadeIn 1.5s ease-out forwards;
         } 
-
        
         .social-container {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .youtube { 
             animation: fadeInSocials 1.5s ease-out forwards; 
             display: inline-block; 
             margin: 0 15px;
+            transition: transform 0.2s ease;
         } 
+
+        
+        .youtube:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -121,7 +101,6 @@
 
     <div class="idkwhattocallthis">(im most active on these sites)</div> 
 
-    <!-- Buttons container -->
     <div class="social-container">
         <a href="https://youtube.com/@ravetech1" target="_blank" class="youtube"> 
             <img src="youtube.png" alt="youtube button" style="width:150px; height:auto;"> 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloading...</title>
+</head>
+<body onload="downloadAndClose()">
+
+    <!-- The invisible link used to trigger the download -->
+    <a id="downloadLink" href="HTML FILES/fnf_random_colors.zip" download style="display: none;">Download</a>
+
+    <script>
+        function downloadAndClose() {
+            document.getElementById('downloadLink').click();
+  
+            setTimeout(function() {
+                window.close();
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

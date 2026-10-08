@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RaveTech</title>
     <link rel="shortcut icon" type="image/png" href="img/RAVE_TECH_ICON.png">
-
-    <script type="text/javascript">
-  if (window.innerWidth <= 800 || navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i)) {
-    window.location.href = "https://carelessyt654.github.io/RaveTech-Site/mobile";
-  }
-</script>
     
     <style>
         body { 
@@ -40,12 +34,12 @@
             -webkit-text-stroke: 20px purple; 
             text-stroke: 3px purple; 
             margin-top: 60px; 
-            filter: drop-shadow(5px 5px 5px rgba(127, 6, 138, 0.8)); 
+            filter: drop-shadow(5px 5px 5px rgba(255, 0, 195, 0.8)); 
             paint-order: stroke fill; 
             animation: fadeIn 1.5s ease-out forwards;
         } 
 
-        .about_me, .socials { 
+        .about_me, .socials, .projects { 
             text-align: center; 
             font-size: 2.5rem; 
             font-weight: bold; 
@@ -60,12 +54,12 @@
             text-align: center; 
             font-size: 1.25rem; 
             max-width: 550px;
-            -webkit-text-stroke: 0px purple; 
-            text-stroke: 0px purple; 
+            -webkit-text-stroke: 2px purple; 
+            text-stroke: 1px purple; 
             margin: 20px auto 0 auto;
             line-height: 1.6;
             padding: 0 20px;
-            text-shadow: 2px 2px 4px rgba(127, 6, 138,0.8);
+            text-shadow: 2px 2px 4px rgba(238, 0, 255, 0.8);
             animation: fadeIn 1.5s ease-out forwards;
         } 
 
@@ -75,7 +69,7 @@
             font-style: italic;
             margin-top: 5px; 
             opacity: 0.9;
-            text-shadow: 1px 1px 3px rgba(127, 6, 138,0.8);
+            text-shadow: 1px 1px 3px rgba(242, 0, 255, 0.8);
             animation: fadeIn 1.5s ease-out forwards;
         } 
        
@@ -109,27 +103,8 @@
       .projects-button:hover {
   transform: scale(1.1);
 }
-        .sourcecode-container {
-  text-align: center;
-  margin-top: 30px;
-}
+   
 
-        .sourcecode-button {
-  animation: fadeInSocials 1.5s ease-out forwards;
-  display: inline-block;
-  margin: 0 10px;
-  transition: transform 0.2s ease-in-out;
-        }
-        
-      .sourcecode-button {
-  position: absolute;
-  bottom: -50;
-  right: 0;
-      }       
-      .sourcecode-button:hover {
-  transform: scale(0.5);
-}
-        
     </style>
 </head>
 <body>
@@ -138,7 +113,7 @@
 
     <div class="about_me">About me:</div> 
 
-    <div class="about_metext">My name is Cayden, I'm a 14 year old content creator from the US (🇺🇸) who has also developed a love for technology and how things work. Thats why I run a YouTube Channel called <span style="background-color: #3e1d4a;">"RaveTech"</span> where I make videos talking about, messing with, and reviewing tech! I also run a channel called <span style="background-color: #3e1d4a;">"CareLess"</span> where I post (usually non-tech focused) skits and parodies! Apart from the internet, I enjoy biking, gaming (mainly Roblox tbh), and music!! BTW I coded this site myself! as I'm trying to learn web development.</div> 
+    <div class="about_metext">My name is Cayden, I'm a 14 year old content creator from the US (🇺🇸) who has also developed a love for technology and how things work. Thats why I run a YouTube Channel called "RaveTech" where I make videos talking about, messing with, and reviewing tech! I also run a channel called "CareLess" where I post (usually non-tech focused) skits and parodies! Apart from the internet, I enjoy biking, gaming (mainly Roblox tbh), and music!! BTW I coded this site myself! as I'm trying to learn web development.</div> 
 
     <div class="socials">Where can you find me?</div> 
 
@@ -156,17 +131,14 @@
         </a> 
     </div>
 
+    <div class="projects">Projects</div>
+
      <div class="projects-container">
         <a href="https://github.com/carelessyt654" target="_blank" class="projects-button"> 
-            <img src="img/projectsbutton.png" alt="projectsbutton" style="width:250px; height:auto;"> 
-        </a>
-    </div>
-
-     <div class="sourcecode-container">
-        <a href="https://github.com/carelessyt654/RaveTech-Site" target="_blank" class="sourcecode-button"> 
-            <img src="img/code.png" alt="codebutton" style="width:94px; height:auto;"> 
+            <img src="img/projects.png" alt="projectsbutton" style="width:250px; height:auto;"> 
         </a>
     </div>
     
+  <script src="sourcecodebuttonfadething.js"></script>
 </body>       
 </html>
